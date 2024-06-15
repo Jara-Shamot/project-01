@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Band Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
+    <button id="backToTop" title="Go to top">&#8679;</button>
+    <header class="page-header">
+      <div class="container">
+        <a href="#" class="logo">Band Name</a>
+        <nav class="page-nav">
+          <ul class="nav-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#music">Music</a></li>
+            <li><a href="#tour">Tour</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <button class="burger" id="burger">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </header>
+
+    <div class="modal" id="navModal">
+      <div class="modal-content">
+        <span class="close" id="closeModal">&times;</span>
+        <ul class="nav-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#music">Music</a></li>
+          <li><a href="#tour">Tour</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <main>
+      <section id="home" class="section home">
+        <h1>Welcome to Our Band</h1>
+        <p>Experience the best music with us!</p>
+        <button class="explore-button">Explore</button>
+      </section>
+      <section id="about" class="section about">
+        <h2>About Us</h2>
+        <p>Learn more about our journey and music.</p>
+      </section>
+      <section id="music" class="section music">
+        <h2>Our Music</h2>
+        <p>Listen to our latest tracks.</p>
+      </section>
+      <section id="tour" class="section tour">
+        <h2>Tour Dates</h2>
+        <p>Check out our upcoming tours.</p>
+      </section>
+      <section id="contact" class="section contact">
+        <h2>Contact Us</h2>
+        <p>Get in touch with us for collaborations or queries.</p>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <p>&copy; 2024 Band Name. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
