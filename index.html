@@ -2,75 +2,315 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Band Portfolio</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>Rhythm Construction</title>
+    <link rel="icon" type="image/x-icon" href="./assets/pics/logo.png" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/style/components/index/style.css" />
   </head>
+
   <body>
-    <button id="backToTop" title="Go to top">&#8679;</button>
-    <header class="page-header">
+    <header id="header">
       <div class="container">
-        <a href="#" class="logo">Band Name</a>
-        <nav class="page-nav">
-          <ul class="nav-list">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#music">Music</a></li>
-            <li><a href="#tour">Tour</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-        <button class="burger" id="burger">
-          <i class="fas fa-bars"></i>
-        </button>
+        <div class="wrapper">
+          <div class="wrapper__top">
+            <div class="wrapper__top__cover">
+              <img src="./assets/pics/headerCover.webp" alt="headerCover" />
+            </div>
+            <div class="wrapper__top__info">
+              <div class="wrapper__top__info--name">
+                <h3>Rhythm Construction</h3>
+              </div>
+              <div class="wrapper__top__info--socials">
+                <a href="https://www.facebook.com/profile.php?id=61564071127608"
+                  ><img
+                    src="./assets/pics/facebookLogo.webp"
+                    alt="facebookLogo"
+                /></a>
+                <a href="https://www.instagram.com"
+                  ><img
+                    src="./assets/pics/instagramLogo.webp"
+                    alt="instagramLogo"
+                /></a>
+              </div>
+            </div>
+            <div class="wrapper__top__logo">
+              <img src="./assets/pics/Logo.jpg" alt="Rhythmconstractionlogo" />
+            </div>
+          </div>
+          <div class="wrapper__navs">
+            <div>
+              <a href="./index.html">Home</a>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
+    <main id="main">
+      <section id="news">
+        <div class="container">
+          <div class="wrapper">
+            <div class="wrapper__news" data-aos="fade-right">
+              <span></span>
+              <p>
+                Onze teksten zijn vrolijk en opbeurend, vaak geïnspireerd door
+                het leven op tropische eilanden en zomerse avonturen. Rhythm
+                Construction heeft een trouwe fanbase opgebouwd door onze passie
+                en toewijding aan muziek, en we blijven grenzen verleggen met
+                elke nieuwe optreden.
+              </p>
+            </div>
+            <div class="wrapper__details" data-aos="fade-left">
+              <h2>DETAILS</h2>
+              <p>
+                Based in Den Haag, NL <br />
+                Founded in 2020 <br />
+                Genre: Pop, Disco, Top 40, Caribisch, Bollywood <br />
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="music">
+        <div class="container">
+          <div class="wrapper">
+            <div class="wrapper__content">
+              <div class="wrapper__content__title" data-aos="fade-down">
+                <h2>MUSIC</h2>
+              </div>
+              <div class="wrapper__content__player" data-aos="fade-down">
+                <div class="wrapper__content__player--image">
+                  <img id="disc" src="./assets/pics/Logo.jpg" alt="" />
+                </div>
+                <div class="wrapper__content__player--audio">
+                  <audio id="audio">
+                    <source
+                      src="./assets/songs/Audio1.mpeg"
+                      type="audio/mpeg"
+                    />
+                    Your browser does not support the audio element.
+                  </audio>
+                </div>
+                <div class="wrapper__content__player--btnsPrgrs">
+                  <div class="progressContainer" id="progress-container">
+                    <div
+                      class="progressContainer__progress"
+                      id="progress"
+                    ></div>
+                  </div>
+                  <div class="buttons">
+                    <i class="fa-solid fa-2xl fa-backward"></i>
+                    <i id="playBtn" class="fa-solid fa-2xl fa-play"></i>
+                    <i class="fa-solid fa-2xl fa-forward"></i>
+                  </div>
+                  <input
+                    type="range"
+                    id="rngVolume"
+                    min="0"
+                    max="1"
+                    step=".01"
+                    value="0"
+                  />
+                </div>
+                <div class="wrapper__content__player--wallpaper">
+                  <img src="./assets/pics/forPlayer.jpeg" alt="" />
+                </div>
+                <div class="wrapper__content__player--lyrics"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="photos">
+        <div class="container">
+          <div class="wrapper">
+            <div class="wrapper__photos" data-aos="fade-right">
+              <span>PHOTOS</span>
+              <div class="wrapper__photos__carousel">
+                <div class="wrapper__photos__carousel--carouselItem">
+                  <img
+                    src="./assets/pics/foto1.jpeg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="wrapper__photos__carousel--carouselItem">
+                  <img
+                    src="./assets/pics/foto2.jpeg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="wrapper__photos__carousel--carouselItem">
+                  <img
+                    src="./assets/pics/foto4.jpeg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="wrapper__photos__carousel--carouselItem">
+                  <img
+                    src="./assets/pics/foto5.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="wrapper__photos__carousel--carouselItem">
+                  <img
+                    src="./assets/pics/foto6.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="wrapper__photos__carousel--carouselItem">
+                  <img
+                    src="./assets/pics/foto7.jpeg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="wrapper__photos__carousel--buttons">
+                  <button class="wrapper__photos__carousel--buttons--pre">
+                    <i class="fa-solid fa-angle-left"></i>
+                  </button>
+                  <button class="wrapper__photos__carousel--buttons--next">
+                    <i class="fa-solid fa-angle-right"></i>
+                  </button>
+                </div>
+                <!-- <div class="dots"></div> -->
+              </div>
+            </div>
+            <div class="wrapper__weare" data-aos="fade-down">
+              <h2>WIJ ZIJN</h2>
+              <p>
+                Rhythm Construction is een energieke band die de hitlijsten
+                bestormt met onze unieke mix van Pop, Disco, Top 40, Caribische
+                invloeden en Bollywood. Onze muziek is een feest voor de
+                zintuigen, met aanstekelijke ritmes, zonnige melodieën en
+                onweerstaanbare beats die je meteen doen dansen. De band bestaat
+                uit getalenteerde en enthousiaste muzikanten:
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="info">
+        <div class="container">
+          <div class="wrapper" data-aos="zoom-in">
+            <button class="wrapper__accordion">
+              Leadzangers en Zangeressen
+            </button>
+            <div class="wrapper__panel">
+              <p>
+                Met onze charismatische uitstraling en krachtige stemmen weten
+                de leadzangers en zangeressen elk publiek te betoveren. Onze
+                zangstijl is een perfecte mix van pop, disco vibes, Caribische
+                flair en Bollywood invloeden, wat de muziek van Rhythm
+                Construction een unieke twist geeft.
+              </p>
+            </div>
 
-    <div class="modal" id="navModal">
-      <div class="modal-content">
-        <span class="close" id="closeModal">&times;</span>
-        <ul class="nav-list">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#music">Music</a></li>
-          <li><a href="#tour">Tour</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </div>
+            <button class="wrapper__accordion">Toetsenist</button>
+            <div class="wrapper__panel">
+              <p>
+                De toetsenist voegt met zijn soepele spel een extra laag van
+                kleur en sfeer en toe aan de muziek van de band.
+              </p>
+            </div>
 
-    <main>
-      <section id="home" class="section home">
-        <h1>Welcome to Our Band</h1>
-        <p>Experience the best music with us!</p>
-        <button class="explore-button">Explore</button>
+            <button class="wrapper__accordion">Gitarist</button>
+            <div class="wrapper__panel">
+              <p>
+                De gitarist is een virtuoos die bekend staat om soepele riffs en
+                energieke solo's. Zijn spel voegt een extra laag van
+                complexiteit en plezier toe aan de muziek van de band.
+              </p>
+            </div>
+
+            <button class="wrapper__accordion">Bassist</button>
+            <div class="wrapper__panel">
+              <p>
+                De bassist zorgt voor de solide basis van de band met diepe,
+                ritmische baslijnen. En geeft elke track een onweerstaanbare
+                groove.
+              </p>
+            </div>
+
+            <button class="wrapper__accordion">Drummer</button>
+            <div class="wrapper__panel">
+              <p>
+                De drummer is de energieke kracht achter de drums. Zijn
+                dynamische en precieze drummen zorgt ervoor dat elk nummer een
+                ritmische punch heeft die het publiek aan het dansen krijgt.
+              </p>
+            </div>
+
+            <button class="wrapper__accordion">Percussionist</button>
+            <div class="wrapper__panel">
+              <p>
+                De percussionist voegt een extra laag van ritmische complexiteit
+                toe met zijn percussie-instrumenten, wat de Caribische en
+                Bollywood invloeden in onze muziek versterkt.
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
-      <section id="about" class="section about">
-        <h2>About Us</h2>
-        <p>Learn more about our journey and music.</p>
-      </section>
-      <section id="music" class="section music">
-        <h2>Our Music</h2>
-        <p>Listen to our latest tracks.</p>
-      </section>
-      <section id="tour" class="section tour">
-        <h2>Tour Dates</h2>
-        <p>Check out our upcoming tours.</p>
-      </section>
-      <section id="contact" class="section contact">
-        <h2>Contact Us</h2>
-        <p>Get in touch with us for collaborations or queries.</p>
+      <section id="video">
+        <div class="container">
+          <div class="wrapper">
+            <div class="wrapper__video">
+              <p>
+                <span>VIDEO</span>
+              </p>
+              <video controls data-aos="zoom-out-down">
+                <source src=".VIDEO HIER" type="video/mp4" />
+                Your browser does not support HTML video.
+              </video>
+            </div>
+            <!-- <div class="wrapper__downloads" data-aos="fade-down">
+              <h2>DOWNLOADS</h2>
+              <a class="wrapper__downloads__buttons" href="#"
+                >DOWNLOAD FULL BIO</a
+              >
+              <a class="wrapper__downloads__buttons" href="#"
+                >DOWNLOAD PRESS RELEASE</a
+              >
+              <a class="wrapper__downloads__buttons" href="#"
+                >DOWNLOAD PRESS QUOTES</a
+              >
+            </div> -->
+          </div>
+        </div>
       </section>
     </main>
-
-    <footer class="page-footer">
-      <p>&copy; 2024 Band Name. All rights reserved.</p>
+    <footer id="footer">
+      <div class="container">
+        <div class="wrapper">
+          <div class="wrapper__navs">
+            <ul>
+              <li><a href="/">Contact Information</a></li>
+            </ul>
+          </div>
+          <div class="wrapper__copyright">
+            <h5>© 2024 Rhythm Constraction. Alle rechten voorbehouden</h5>
+          </div>
+        </div>
+      </div>
     </footer>
-
-    <script src="script.js"></script>
+    <button id="up">UP</button>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="./main.js" type="module"></script>
   </body>
 </html>
